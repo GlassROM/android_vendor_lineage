@@ -32,5 +32,6 @@
 
     <!-- The default WebView implementation -->
     <webviewprovider description="AOSP WebView" packageName="com.android.webview" availableByDefault="true" />
+    <webviewprovider description="Vanadium" packageName="org.grapheneos.vanadium.webview" availableByDefault="true" />
 
 </webviewproviders>
