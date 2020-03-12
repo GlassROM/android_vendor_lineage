@@ -127,6 +127,11 @@ PRODUCT_PACKAGES += \
     Exchange2 \
     Terminal
 
+# GlassROM packages
+PRODUCT_PACKAGES += \
+    AuroraServices \
+    FDroidPrivilegedExtension
+
 # Lineage packages
 PRODUCT_PACKAGES += \
     AudioFX \
