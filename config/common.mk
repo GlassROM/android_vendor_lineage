@@ -131,7 +131,8 @@ PRODUCT_PACKAGES += \
 # GlassROM packages
 PRODUCT_PACKAGES += \
     AuroraServices \
-    FDroidPrivilegedExtension
+    FDroidPrivilegedExtension \
+    UnifiedNlp
 
 # Lineage packages
 PRODUCT_PACKAGES += \
