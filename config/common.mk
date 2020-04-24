@@ -136,7 +136,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AuroraServices \
     FDroidPrivilegedExtension \
-    UnifiedNlp
+    UnifiedNlp \
+    PdfViewer
 
 # Lineage packages
 PRODUCT_PACKAGES += \
