@@ -96,7 +96,11 @@ endif
 
 # Needed for CONFIG_COMPAT_VDSO, safe to set for all arm64 builds
 ifeq ($(KERNEL_ARCH),arm64)
-   KERNEL_CROSS_COMPILE += CROSS_COMPILE_ARM32="$(KERNEL_TOOLCHAIN_arm)/$(KERNEL_TOOLCHAIN_PREFIX_arm)"
+   ifneq ($(TARGET_KERNEL_CLANG_VERSION),kdragon)
+      KERNEL_CROSS_COMPILE += CROSS_COMPILE_ARM32="$(KERNEL_TOOLCHAIN_arm)/$(KERNEL_TOOLCHAIN_PREFIX_arm)"
+   else
+      KERNEL_CROSS_COMPILE += CROSS_COMPILE_ARM32="arm-linux-gnueabi-"
+   endif
 endif
 
 # Clear this first to prevent accidental poisoning from env
