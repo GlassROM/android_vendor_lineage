@@ -109,6 +109,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Terminal
 
+# GlassROM packages
+PRODUCT_PACKAGES += \
+    AuroraServices \
+    FDroidPrivilegedExtension \
+    UnifiedNlp \
+    PdfViewer
+
 # Lineage packages
 PRODUCT_PACKAGES += \
     LineageParts \
@@ -280,7 +287,7 @@ else
 endif
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
-    vendor/lineage/build/target/product/security/lineage
+    vendor/lineage/build/target/product/security/glassrom
 
 -include vendor/lineage-priv/keys/keys.mk
 
