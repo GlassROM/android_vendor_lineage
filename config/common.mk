@@ -112,7 +112,6 @@ PRODUCT_PACKAGES += \
 # GlassROM packages
 PRODUCT_PACKAGES += \
     AuroraServices \
-    FDroidPrivilegedExtension \
     UnifiedNlp \
     PdfViewer
 
